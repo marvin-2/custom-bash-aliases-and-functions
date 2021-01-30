@@ -1,6 +1,7 @@
 # instructions
 # 1. place file in ~
-# 2. add "source ~/.custom-aliases" at end of file ~/.bashrc
+# 2. add "source ~/.custom-aliases" at end of file ~/.bashrc (must be after "source ~/.custom-functions")
+# 3. restart terminal or run "source ~/.bashrc"
 
 # custom aliases
 
@@ -9,8 +10,6 @@ alias update-upgrade="sudo apt update && sudo apt upgrade -y"
 
 # search history
 alias hgrep="history | grep -i"
-
-# working with custom functions
 
 # working with custom aliases
 alias shortcuts="less ~/.custom-aliases"

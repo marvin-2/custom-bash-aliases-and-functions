@@ -1,6 +1,7 @@
 # instructions
 # 1. place file in ~
 # 2. add "source ~/.custom-functions" at end of file ~/.bashrc (must be before "source ~/.custom-aliases")
+# 3. restart terminal or run "source ~/.bashrc"
 
 # create alias to git add, commit, and push with message
 function __commit-push() {
