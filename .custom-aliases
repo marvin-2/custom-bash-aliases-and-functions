@@ -1,0 +1,21 @@
+# instructions
+# 1. place file in ~
+# 2. add "source ~/.custom-aliases" at end of file ~/.bashrc
+
+# custom aliases
+
+# update and upgrade
+alias update-upgrade="sudo apt update && sudo apt upgrade -y"
+
+# search history
+alias hgrep="history | grep -i"
+
+# working with custom functions
+
+# working with custom aliases
+alias shortcuts="less ~/.custom-aliases"
+alias shortcuts-edit="vim ~/.custom-aliases"
+alias shortcuts-update="source ~/.custom-aliases"
+
+# git add, commit, and push with message
+alias commit-push="__commit-push"

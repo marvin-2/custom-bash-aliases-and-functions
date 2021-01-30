@@ -1,0 +1,10 @@
+# instructions
+# 1. place file in ~
+# 2. add "source ~/.custom-functions" at end of file ~/.bashrc (must be before "source ~/.custom-aliases")
+
+# create alias to git add, commit, and push with message
+function __commit-push() {
+  git add .
+  git commit -m "$1"
+  git push
+}
