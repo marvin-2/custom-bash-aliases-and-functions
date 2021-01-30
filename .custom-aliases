@@ -14,7 +14,7 @@ alias hgrep="history | grep -i"
 # working with custom aliases
 alias shortcuts="less ~/.custom-aliases"
 alias shortcuts-edit="vim ~/.custom-aliases"
-alias shortcuts-update="source ~/.custom-aliases"
+alias shortcuts-update="source ~/.bashrc"
 
 # git add, commit, and push with message
 alias commit-push="__commit-push"
