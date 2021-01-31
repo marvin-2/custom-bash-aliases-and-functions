@@ -10,6 +10,7 @@ alias update-upgrade="sudo apt update && sudo apt upgrade -y"
 
 # search history
 alias hgrep="history | grep -i"
+alias hcount="__history-count"
 
 # working with custom aliases
 alias shortcuts="less ~/.custom-aliases"

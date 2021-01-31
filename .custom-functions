@@ -3,7 +3,17 @@
 # 2. add "source ~/.custom-functions" at end of file ~/.bashrc (must be before "source ~/.custom-aliases")
 # 3. restart terminal or run "source ~/.bashrc"
 
-# create alias to git add, commit, and push with message
+# count command usage. Pass a number to look only at tail $1 of commands, otherwise looks at all history
+function __history-count() {
+  if [ ${1:0} -gt 0 ]
+  then 
+    history $1 | awk '{c[$2]++}END{for (x in c) print c[x],x | "sort -n"}'
+  else
+    history | awk '{c[$2]++}END{for (x in c) print c[x],x | "sort -n"}'
+  fi
+}
+
+# git add, commit, and push with given message
 function __commit-push() {
   git add .
   git commit -m "$1"
