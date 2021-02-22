@@ -8,6 +8,9 @@
 # update and upgrade
 alias update-upgrade="sudo apt update && sudo apt upgrade -y"
 
+# clear
+alias c="clear"
+
 # search history
 alias hgrep="history | grep -i"
 alias hcount="__history-count"
@@ -16,6 +19,9 @@ alias hcount="__history-count"
 alias shortcuts="less ~/.custom-aliases"
 alias shortcuts-edit="vim ~/.custom-aliases"
 alias shortcuts-update="source ~/.bashrc"
+
+# git status
+alias gits="git status"
 
 # git add, commit, and push with message
 alias commit-push="__commit-push"
